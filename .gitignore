@@ -5,5 +5,5 @@ secrets.toml
 
 archived_logs/
 
-*.venv
+*.venv/
 .python-version
