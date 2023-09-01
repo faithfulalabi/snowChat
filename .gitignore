@@ -4,3 +4,6 @@ secrets.toml
 .ruff_cache
 
 archived_logs/
+
+*.venv
+.python-version

@@ -44,9 +44,9 @@ class DocumentProcessor:
 
 def run():
     secrets = Secrets(
-        SUPABASE_URL=st.secrets["SUPABASE_URL"],
-        SUPABASE_SERVICE_KEY=st.secrets["SUPABASE_SERVICE_KEY"],
-        OPENAI_API_KEY=st.secrets["OPENAI_API_KEY"],
+        SUPABASE_URL=st.secrets["streamlit"]["SUPABASE_URL"],
+        SUPABASE_SERVICE_KEY=st.secrets["streamlit"]["SUPABASE_SERVICE_KEY"],
+        OPENAI_API_KEY=st.secrets["openai"]["OPENAI_API_KEY"],
     )
     config = Config()
     doc_processor = DocumentProcessor(secrets, config)

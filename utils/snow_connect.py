@@ -32,7 +32,6 @@ class SnowflakeConnection:
         connection_parameters = {
             "account": st.secrets["ACCOUNT"],
             "user": st.secrets["USER_NAME"],
-            "password": st.secrets["PASSWORD"],
             "warehouse": st.secrets["WAREHOUSE"],
             "database": st.secrets["DATABASE"],
             "schema": st.secrets["SCHEMA"],
